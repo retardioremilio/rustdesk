@@ -20,7 +20,7 @@ pub fn new_voice_call_request(is_connect: bool) -> Message {
     let mut req = VoiceCallRequest::new();
     req.is_connect = is_connect;
     req.req_timestamp = get_time();
-    let mut msg = Message::new();
+    //let mut msg = Message::new();
     msg.set_voice_call_request(req);
     msg
 }
